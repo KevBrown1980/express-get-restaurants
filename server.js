@@ -5,7 +5,7 @@ const {sequelize} = require("./db");
 
 const port = 3000;
 
-//TODO: Create your GET Request Route Below: 
+//TODO: Create your GET Request Route Below: dd
 
 
 app.listen(port, () => {
