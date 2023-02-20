@@ -7,9 +7,9 @@ const port = 3000;
 
 //TODO: Create your GET Request Route Below: dd
 
-app.get('/Restaurant', async (request, response) => {
+app.get('/restaurants', async (request, response) => {
     //const date = new Date();
-    let allRestuarants = await Restaurant.findAll();
+    let allRestaurants = await Restaurant.findAll();
     response.send(allRestaurants);
 })
 
