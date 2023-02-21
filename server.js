@@ -18,7 +18,7 @@ app.get('/restaurants', async (request, response) => {
 //FIND by ID
 app.get('/restaurants/:id', async (req, res) => {
     const restaurantsById = await Restaurant.findByPk(req.params.id)
-    res.send(restaurantsById);
+    res.json(restaurantsById);
 })
 
 
