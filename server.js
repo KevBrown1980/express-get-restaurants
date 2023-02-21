@@ -7,10 +7,18 @@ const port = 3000;
 
 //TODO: Create your GET Request Route Below: dd
 
+// FIND ALL
 app.get('/restaurants', async (request, response) => {
     //const date = new Date();
     let allRestaurants = await Restaurant.findAll();
     response.send(allRestaurants);
+})
+
+
+//FIND by ID
+app.get('/restaurants/:id', async (req, res) => {
+    const restaurantsById = await Restaurant.findByPk(req.params.id)
+    res.send(restaurantsById);
 })
 
 
